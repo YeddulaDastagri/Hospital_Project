@@ -3,6 +3,6 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('neurologist/', neurologist,name='neurologist'), 
-    path('therapist/',therapist,name='therapist'),
+    path('appointment/', appointment,name='appointment'), 
+    path('patient_bill/',patient_bill,name='patient_bill'),
 ]

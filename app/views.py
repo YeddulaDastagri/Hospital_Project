@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # Create your views here. 
 
-def cardiologist(render):
-    return render(request,'cardiologist.html') 
+def doctor_name(render):
+    return render(request,'doctor_name.html') 
 
-def dermatologist(request):
-    return render(request,'dermatologist.html') 
+def patient(request):
+    return render(request,'patient.html') 

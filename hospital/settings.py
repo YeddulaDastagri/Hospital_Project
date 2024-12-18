@@ -17,7 +17,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os 
 TEMPLATE_DIR=os.path.join(BASE_DIR,'templates') 
 STATIC_DIR_HOSPITAL=os.path.join(os.path.join(BASE_DIR,'hospital'),'static') 
-STATIC_DIR_APP=os.path.join(os.path.join(BASE_DIR,'app'),'static') 
+STATIC_DIR_APP=os.path.join(os.path.join(BASE_DIR,'app'),'static')  
+STATIC_DIR_APP2=os.path.join(os.path.join(BASE_DIR,'app2'),'static') 
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
 
 
@@ -42,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles', 
-    'app',
+    'app', 
+    'app2',
 ]
 
 MIDDLEWARE = [
@@ -127,4 +129,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
-STATICFILES_DIRS=[STATIC_DIR_HOSPITAL,STATIC_DIR_APP]
+STATICFILES_DIRS=[STATIC_DIR_HOSPITAL,STATIC_DIR_APP,STATIC_DIR_APP2]
